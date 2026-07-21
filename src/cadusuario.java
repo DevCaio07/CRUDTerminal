@@ -8,6 +8,7 @@ public class cadusuario {
     private int IDuser;
     Scanner scanner = new Scanner(System.in);
 
+    // funcoes para recebimento dos dados!
     public void receberName(){
         System.out.println("Informe seu Nome completo:");
         nome = scanner.nextLine();
@@ -25,6 +26,9 @@ public class cadusuario {
         if(idade < 18){
             System.out.println("É nescessario ser maior de 18 anos ");
 
+
+        } else {
+            System.out.println("Prossiga com seu cadastro!");
         }
     }
     //todos os Getters and Setters
