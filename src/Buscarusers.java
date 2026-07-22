@@ -1,2 +1,5 @@
-public class Buscarusers {
+public class Buscarusers extends cadusuario {
+
+
+
 }
