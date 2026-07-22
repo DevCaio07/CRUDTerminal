@@ -1,5 +1,7 @@
-import java.util.Scanner;
+import java.io.PrintStream;
 import java.util.Random;
+import java.util.Scanner;
+
 public class cadusuario {
 
     private int IDuser;
@@ -49,7 +51,7 @@ public class cadusuario {
     public int receberId(){
         Random gerarId = new Random();
         IDuser = gerarId.nextInt(50);
-        System.out.printf("ID User" + IDuser +);
+        PrintStream printf = System.out.printf(+IDuser +);
     }
 
     //todos os Getters and Setters
