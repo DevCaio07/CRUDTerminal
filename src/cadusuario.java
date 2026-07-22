@@ -47,11 +47,12 @@ public class cadusuario {
 
 
     }
-    public int receberId(){
+
+    public int receberId() {
         Random gerarId = new Random();
         IDuser = gerarId.nextInt(50);
-        System.out.printf("ID User" + IDuser +)
     }
+
 
     //todos os Getters and Setters
     public String getNome(){

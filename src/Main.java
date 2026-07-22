@@ -1,18 +1,19 @@
-void main(String[] args){
+
+void main(String[] args) {
 
     Scanner menu = new Scanner(System.in);
-    ArrayList<cadusuario> usuariosunicos = new ArrayList<>();
+    listarusers Usuario = new listarusers();
 
     while (true) {
         System.out.print("##--Teste Estrutura de Menu--##\n\n");
         System.out.print("|-----------------------------|\n");
-        System.out.print("| Opção 1 - New User     |\n");
-        System.out.print("| Opção 2 - List User        |\n");
+        System.out.print("| Opção 1 - New User           |\n");
+        System.out.print("| Opção 2 - List User          |\n");
         System.out.print("| Opção 3 - Search User        |\n");
         System.out.print("| Opção 4 - Update User        |\n");
         System.out.print("| Opção 5 - Delete User        |\n");
-        System.out.print("| Opção 0 - Sair              |\n");
-        System.out.print("|-----------------------------|\n");
+        System.out.print("| Opção 0 - Sair               |\n");
+        System.out.print("|------------------------------|\n");
         System.out.print("Digite uma opção: ");
 
         int opcao = menu.nextInt();
@@ -25,6 +26,14 @@ void main(String[] args){
 
             case 1:
                 System.out.print("\nOpção novo cadastro selecionado");
+                cadusuario usuarioaleatory = new cadusuario();
+                usuarioaleatory.receberName();
+                usuarioaleatory.receberemail();
+                usuarioaleatory.receberIdade();
+                usuarioaleatory.receberSenha();
+                Usuario.ReceberUser(usuarioaleatory);
+
+
                 break;
             case 2:
                 System.out.print("\nOpção de listagem selecionado");
@@ -43,6 +52,11 @@ void main(String[] args){
                 break;
         }
 
+
+    }
+
+
+
     }
 
 
@@ -52,6 +66,6 @@ void main(String[] args){
 
 
 
-}
+
 
 
