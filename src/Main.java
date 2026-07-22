@@ -1,6 +1,8 @@
-void main(String[] args){
+
+void main(String[] args) {
 
     Scanner menu = new Scanner(System.in);
+
     ArrayList<cadusuario> usuariosunicos = new ArrayList<>();
 
     while (true) {
@@ -25,6 +27,11 @@ void main(String[] args){
 
             case 1:
                 System.out.print("\nOpção novo cadastro selecionado");
+                cadusuario usuarioaleatory = new cadusuario();
+                usuarioaleatory.receberName();
+                usuarioaleatory.receberemail();
+                usuarioaleatory.receberIdade();
+                usuarioaleatory.receberSenha();
                 break;
             case 2:
                 System.out.print("\nOpção de listagem selecionado");
@@ -43,6 +50,11 @@ void main(String[] args){
                 break;
         }
 
+
+    }
+
+
+
     }
 
 
@@ -52,6 +64,6 @@ void main(String[] args){
 
 
 
-}
+
 
 
