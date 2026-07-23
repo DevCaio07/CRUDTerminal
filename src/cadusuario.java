@@ -36,15 +36,28 @@ public class cadusuario {
     }
 
     public void receberSenha() {
-        System.out.println("Digite a senha desejada: ");
-        senha1 = scanner.nextLine();
 
-        System.out.println("Digite novamente a senha: ");
-        senha2 = scanner.nextLine();
+        try {
+            System.out.println("Digite a senha desejada: ");
+            senha1 = scanner.nextLine();
+            System.out.println("Digite novamente a senha: ");
+            senha2 = scanner.nextLine();
+            System.out.println("Digite novamente a senha: ");
+            scanner.close();
+            boolean iguais = senha1.equals(senha2);
 
-        boolean iguais = senha1.equals(senha2);
+        } catch (Exception e) {
+            System.out.println("Só é permitido numeros ");
+        }
 
-        scanner.close();
+
+
+
+
+
+
+
+
 
 
     }
