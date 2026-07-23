@@ -15,7 +15,6 @@ public class cadusuario {
     public void receberName() {
         System.out.println("Informe seu Nome completo:");
         nome = scanner.nextLine();
-        scanner.close();
     }
 
     public void receberemail() {
@@ -45,12 +44,15 @@ public class cadusuario {
 
         boolean iguais = senha1.equals(senha2);
 
+        scanner.close();
+
 
     }
 
     public int receberId() {
         Random gerarId = new Random();
         IDuser = gerarId.nextInt(50);
+        return 0;
     }
 
 

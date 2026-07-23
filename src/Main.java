@@ -37,6 +37,7 @@ void main(String[] args) {
                 break;
             case 2:
                 System.out.print("\nOpção de listagem selecionado");
+                Usuario.ListarUsuarios();
                 break;
             case 3:
                 System.out.print("\nOpção de pesquisa selecionado");
@@ -57,7 +58,7 @@ void main(String[] args) {
 
 
 
-    }
+}
 
 
 
