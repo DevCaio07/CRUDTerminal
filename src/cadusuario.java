@@ -50,21 +50,11 @@ public class cadusuario {
             System.out.println("Só é permitido numeros ");
         }
 
-
-
-
-
-
-
-
-
-
-
     }
 
     public int receberId() {
         Random gerarId = new Random();
-        IDuser = gerarId.nextInt(50);
+        IDuser = gerarId.nextInt(1000);
         return 0;
     }
 
