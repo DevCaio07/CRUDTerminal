@@ -11,20 +11,34 @@ public class cadusuario {
     private String senha2;
     Scanner scanner = new Scanner(System.in);
 
+
     // funcoes para recebimento dos dados!
+
+
+    @Override
+    public String toString() {
+        return  "Nome: " + getNome() +
+                "\nEmail: " + getEmail() +
+                "\nIdade: " + getIdade() +
+                "\nID: " + getIDuser();
+
+
+    }
+
     public void receberName() {
-        System.out.println("Informe seu Nome completo:");
+        System.out.printf("Informe seu Nome completo: ");
         nome = scanner.nextLine();
     }
 
     public void receberemail() {
-        System.out.println("Digite seu E-mail");
+        System.out.printf("Digite seu E-mail: ");
         email = scanner.nextLine();
     }
 
     public void receberIdade() {
-        System.out.println("Digite sua idade: ");
+        System.out.printf("Digite sua idade: ");
         idade = scanner.nextInt();
+        scanner.nextLine();
         if (idade < 18) {
             System.out.println("É nescessario ser maior de 18 anos ");
 
@@ -37,21 +51,21 @@ public class cadusuario {
 
     public void receberSenha() {
 
-        try {
-            System.out.println("Digite a senha desejada: ");
-            senha1 = scanner.nextLine();
-            System.out.println("Digite novamente a senha: ");
-            senha2 = scanner.nextLine();
-            System.out.println("Digite novamente a senha: ");
-            scanner.close();
-            boolean iguais = senha1.equals(senha2);
+        System.out.printf("Digite a senha: ");
+        senha1 = scanner.nextLine();
 
-        } catch (Exception e) {
-            System.out.println("Só é permitido numeros ");
+        System.out.printf("Digite novamente a senha: ");
+        senha2 = scanner.nextLine();
+
+        if (senha1.equals(senha2)) {
+            System.out.println("Senha cadastrada com sucesso!");
+        } else {
+            System.out.println("As senhas não coincidem.");
         }
 
-    }
 
+
+}
     public int receberId() {
         Random gerarId = new Random();
         IDuser = gerarId.nextInt(1000);
@@ -110,6 +124,8 @@ public class cadusuario {
     public void setSenha2(String senha2){
         this.senha2 = senha2;
     }
+
+
 }
 
 

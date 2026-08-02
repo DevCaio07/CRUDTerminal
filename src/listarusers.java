@@ -1,27 +1,33 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.stream.Stream;
+import java.util.List;
 public class listarusers extends cadusuario{
-    ArrayList<cadusuario> ListaPrincipal = new ArrayList<>();
+   public static List<cadusuario> ListaPrincipal = new ArrayList<>();
 
 
     //Metodos de gerenciamento (recebimento do usuario)
+
     public void ReceberUser(cadusuario usuario) {
 
         ListaPrincipal.add(usuario);
 
     }
 
-    public void ListarUsuarios(){
-        for (cadusuario Users : ListaPrincipal) {
 
-            getNome();
-            getEmail();
-            getIdade();
+    public void ListarUsuarios(){
+        ListaPrincipal.stream()
+                .forEach(System.out :: println);
+
+
+
 
         }
 
-    }
-
 }
+
+
+
 
 
 
