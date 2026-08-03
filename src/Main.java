@@ -1,6 +1,6 @@
 
 public static void main(String[] args) {
-    //Objetos para que eu possa acessar
+    //Objetos para que eu possa acessar a classe
     Scanner menu = new Scanner(System.in);
     listarusers Usuario = new listarusers();
     Buscarusers Buscarelemento = new Buscarusers();
@@ -28,6 +28,8 @@ public static void main(String[] args) {
 
             case 1:
                 cadusuario usuarioaleatory = new cadusuario();
+                //Aqui chamo todos os metodos,comecando pelo objeto criado para a classe um ponto e depois o metodo
+                // desejado.
                 utilidades.LimparInterface();
                 utilidades.cabecalho("CADASTRO USUÁRIO");
                 usuarioaleatory.receberName();
@@ -35,6 +37,8 @@ public static void main(String[] args) {
                 usuarioaleatory.receberIdade();
                 usuarioaleatory.receberSenha();
                 Usuario.ReceberUser(usuarioaleatory);
+                // aqui uso o break para encerrar o programa depois de executar todos os metodos, mas posso usar o return
+                // para ele retornar ao menu principal
                 break;
             case 2:
                 utilidades.LimparInterface();
@@ -50,9 +54,14 @@ public static void main(String[] args) {
                 break;
             case 4:
                 System.out.print("\nOpção de atualizacao de usuario selecionado");
+                utilidades.LimparInterface();
+                utilidades.cabecalho("ATUALIZAR USUÁRIO");
+                Usuario.BuscaruserID();
                 break;
             case 5:
                 System.out.print("\nOpção deletar usuario selecionado");
+                utilidades.LimparInterface();
+                utilidades.cabecalho("DELETAR USUÁRIO");
                 break;
             default:
                 System.out.print("\nEssa opção não existe");

@@ -1,2 +1,2 @@
-public class usersremake {
+public class usersremake extends listarusers {
 }
