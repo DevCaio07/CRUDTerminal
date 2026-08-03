@@ -4,6 +4,7 @@ public static void main(String[] args) {
     Scanner menu = new Scanner(System.in);
     listarusers Usuario = new listarusers();
     Buscarusers Buscarelemento = new Buscarusers();
+    remooveusers RemoveerUser = new remooveusers();
 
 
     while (true) {
@@ -37,7 +38,7 @@ public static void main(String[] args) {
                 usuarioaleatory.receberIdade();
                 usuarioaleatory.receberSenha();
                 Usuario.ReceberUser(usuarioaleatory);
-                // aqui uso o break para encerrar o programa depois de executar todos os metodos, mas posso usar o return
+                // Aqui uso o break para encerrar o programa depois de executar todos os metodos, mas posso usar o return
                 // para ele retornar ao menu principal
                 break;
             case 2:
@@ -62,6 +63,7 @@ public static void main(String[] args) {
                 System.out.print("\nOpção deletar usuario selecionado");
                 utilidades.LimparInterface();
                 utilidades.cabecalho("DELETAR USUÁRIO");
+                RemoveerUser.RemoverUsuario();
                 break;
             default:
                 System.out.print("\nEssa opção não existe");
