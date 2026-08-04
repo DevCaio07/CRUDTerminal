@@ -1,89 +1,165 @@
-# CRUD de Usuários - Java Core
+<div align="center">
 
-## 📖 Sobre o Projeto
+# ☕ CRUD Terminal
 
-Este projeto consiste em um sistema de **CRUD (Create, Read, Update e Delete)** desenvolvido em **Java Core**, executado diretamente no terminal. O objetivo é praticar os principais conceitos da linguagem Java, sem o uso de frameworks, aplicando a lógica de programação e a programação orientada a objetos na criação de um sistema de gerenciamento de usuários.
+### Java • Java Core • Collections • Streams
 
-## 🚀 Funcionalidades
+Sistema CRUD desenvolvido em Java para execução via terminal, criado com o objetivo de praticar Programação Orientada a Objetos, Collections e manipulação de dados utilizando Java Core.
 
-* Cadastro de usuários
-* Listagem de todos os usuários cadastrados
-* Busca de usuário por ID
-* Atualização dos dados de um usuário
-* Remoção de usuários
-* Geração automática de ID para cada cadastro
-* Validação para informar quando um usuário não é encontrado
+![Java](https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=openjdk)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)
+![IDEA](https://img.shields.io/badge/IntelliJ-000000?style=for-the-badge&logo=intellijidea)
 
-## 🛠️ Tecnologias Utilizadas
+</div>
 
-* Java Core
-* Programação Orientada a Objetos (POO)
-* Collections (`ArrayList`)
-* Classes e Objetos
-* Métodos
-* Encapsulamento
-* Estruturas de repetição e decisão
-* Entrada de dados com `Scanner`
+---
 
-## 📂 Estrutura do Projeto
+# 📖 Sobre o projeto
+
+O **CRUD Terminal** foi desenvolvido para colocar em prática os principais fundamentos da linguagem Java através da construção de uma aplicação totalmente executada no terminal.
+
+Durante o desenvolvimento foram aplicados conceitos como Programação Orientada a Objetos, Collections, Streams, encapsulamento, organização em classes e manipulação de listas para gerenciamento de usuários.
+
+---
+
+# 🎯 Objetivos
+
+- Consolidar conhecimentos em Java Core
+- Praticar Programação Orientada a Objetos
+- Trabalhar com Collections
+- Utilizar Streams para consultas
+- Melhorar a organização do código
+- Simular um sistema CRUD completo
+
+---
+
+# 🚀 Tecnologias
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=java,git,github,idea"/>
+
+</div>
+
+---
+
+# 📂 Estrutura do Projeto
 
 ```text
-src/
+src
 │
-├── Main.java
-├── model/
-│   └── Usuario.java
-├── service/
-│   └── UsuarioService.java
-└── util/
-    └── GeradorId.java
+├── model
+├── service
+├── menu
+├── utils
+└── Main.java
 ```
 
-> A estrutura pode variar de acordo com a organização do projeto.
+---
 
-## ▶️ Como Executar
+# ⚙️ Funcionalidades
 
-1. Clone este repositório.
+O sistema permite realizar operações básicas de gerenciamento de usuários diretamente pelo terminal.
+
+### ✅ Cadastro
+
+Adiciona novos usuários ao sistema.
+
+### 🔍 Consulta
+
+Pesquisa usuários cadastrados.
+
+### ✏️ Atualização
+
+Atualiza informações de um usuário existente.
+
+### ❌ Remoção
+
+Remove usuários cadastrados.
+
+### 📋 Listagem
+
+Exibe todos os usuários registrados.
+
+---
+
+# 🧠 Conceitos praticados
+
+- Programação Orientada a Objetos
+- Encapsulamento
+- Classes e Objetos
+- Métodos
+- Collections
+- ArrayList
+- Streams
+- Lambdas
+- toString()
+- Scanner
+- Organização em camadas
+
+---
+
+# ▶️ Como executar
+
+Clone o repositório
 
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/DevCaio07/CRUDTerminal.git
 ```
 
-2. Entre na pasta do projeto.
+Entre na pasta
 
 ```bash
-cd nome-do-projeto
+cd CRUDTerminal
 ```
 
-3. Compile os arquivos Java.
+Compile o projeto
 
 ```bash
-javac *.java
+javac Main.java
 ```
 
-4. Execute a aplicação.
+Execute
 
 ```bash
 java Main
 ```
 
-## 📚 Conceitos Praticados
+Ou simplesmente execute o projeto pela sua IDE de preferência (IntelliJ IDEA ou VS Code).
 
-Durante o desenvolvimento deste projeto foram aplicados conceitos importantes da linguagem Java, como:
+---
 
-* Programação Orientada a Objetos
-* Organização em classes
-* Manipulação de listas (`ArrayList`)
-* Busca de objetos por ID
-* Passagem de parâmetros entre métodos
-* Encapsulamento
-* Reutilização de código
-* Separação de responsabilidades entre as classes
+# 📚 Aprendizados
 
-## 🎯 Objetivo
+Este projeto foi fundamental para consolidar conhecimentos em Java antes do início dos estudos com Spring Boot.
 
-O principal objetivo deste projeto é fortalecer os conhecimentos em Java Core por meio da implementação de um CRUD completo em ambiente de terminal, servindo como base para projetos futuros utilizando frameworks como Spring Boot.
+Durante seu desenvolvimento foram praticados conceitos como:
 
-## 👨‍💻 Autor
+- Estruturação de projetos Java
+- Programação Orientada a Objetos
+- Manipulação de listas
+- Utilização de Streams
+- Organização de código
+- Entrada e saída de dados pelo terminal
 
-Desenvolvido como projeto de estudos para aperfeiçoamento em Java e preparação para oportunidades na área de desenvolvimento back-end.
+---
+
+# 🔮 Próximos passos
+
+- Persistência em banco de dados
+- Integração com MySQL
+- Interface gráfica
+- Spring Boot
+- API REST
+- Spring Data JPA
+
+---
+
+# 👨‍💻 Autor
+
+**Caio Fernando**
+
+Backend Developer em formação
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-2563EB?style=for-the-badge&logo=linkedin)](SEU_LINKEDIN)
